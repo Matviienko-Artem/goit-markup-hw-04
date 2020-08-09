@@ -1,0 +1,392 @@
+:root {
+  --accent-color: #2196f3;
+  --dark-color: #212121;
+  --white-color: #ffffff;
+  --gray-color: #757575;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: var(--dark-color);
+}
+
+.container {
+  width: 1600px;
+  padding-left: 215px;
+  padding-right: 215px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: tomato; */
+}
+
+.flexbox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Начало хедера */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: none;
+  margin-right: 85px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.logoword {
+  color: #000000;
+}
+
+.navigation {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-navigation {
+  margin-right: auto;
+}
+
+.navigation-menu:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-item {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-item:hover {
+  color: var(--accent-color);
+}
+
+.navigation-item:focus {
+  color: var(--accent-color);
+}
+
+nav ~ a.navigation-item {
+  color: var(--gray-color);
+}
+
+/* Конец хедера */
+/* Начало основной части */
+
+.hero {
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(47, 48, 58, 0.8);
+  padding-left: 452px;
+  padding-right: 452px;
+  padding-top: 200px;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin: 0em;
+}
+
+.button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: var(--white-color);
+  width: 200px;
+  height: 50px;
+  padding: 10px 31px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button:hover {
+  background: #188ce8;
+}
+
+.features {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  margin-top: 95px;
+}
+
+.features:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-img {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  padding: 25px 100px;
+}
+
+.features-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  margin-top: 30px;
+}
+
+.features-content {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--gray-color);
+  margin-top: 10px;
+}
+
+.wht-doing {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-color);
+  margin-top: 85px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-color);
+}
+
+.working {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.working:not(:last-child) {
+  margin-right: 30px;
+}
+
+.working-img {
+  width: 370px;
+  height: 294px;
+}
+
+.working-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-cmnd {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-color);
+  margin-top: 185px;
+  margin-bottom: 0px;
+}
+
+.team-list,
+.social-link {
+  list-style-type: none;
+}
+
+.team-list {
+  padding-left: 0;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.team-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-img {
+  width: 270px;
+  height: 260px;
+}
+
+.employee {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-color);
+  margin-top: 30px;
+  padding-bottom: 0;
+}
+
+.profession {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--gray-color);
+  margin-top: 10px;
+}
+
+.social-item {
+  text-decoration: none;
+}
+
+.our-client {
+  margin-top: 185px;
+  margin-bottom: 0px;
+}
+
+.client-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.client {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  width: 170px;
+  height: 90px;
+  margin-top: 50px;
+
+  padding-top: 22px;
+  text-align: center;
+}
+
+.client:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Конец основной части */
+/* Начало футера */
+
+footer {
+  background: #2f303a;
+  margin-top: 94px;
+}
+
+.footer-content {
+  justify-content: start;
+  display: flex;
+}
+
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: none;
+  margin: 0;
+  margin-top: 60px;
+}
+
+.logoword-white {
+  color: var(--white-color);
+}
+
+.address {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  margin: 0;
+  padding-left: 0px;
+  margin-top: 20px;
+  margin-right: 70px;
+  margin-bottom: 60px;
+}
+
+.address-item {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.invite-list {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.invite-item {
+  text-decoration: none;
+}
+
+.invite {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin: 0;
+  margin-top: 72px;
+}
+
+.invite:not(:last-child) {
+  margin-right: 94px;
+}
+
+/* Конец футера */
